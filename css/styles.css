@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{ /* selector */
+    /* propiedades:  valores de propiedades  */
+    
+    width: 100%;
+    height: 100vh;
+    /*para poner fonfo de imagen */
+    background: url("../img/Frame\ 1.1png.png");
+    background-size: cover; /* para cubrir toda la pantalla */
+    background-position: center; /* para el foco de la imagen se centre a lo importante */
+
+
+}   
+/* apuntamos a la barra de navegacion que esta dentro de header */
+header nav{
+    
+    /* para colocar un elemento a la par del otro  */
+    display: flex;
+    /* height: 400px; */
+    width: 100%;
+    /* para colocar los elementos en algun lugar de la pantalla */
+    /* para colocar espacio entre elementos */
+    justify-content: space-around;     /* eje x */
+    /* para centrar en la pagina */
+     align-items: center; /* eje y */
+     padding: 30px 0;
+}
+
+
+header ul a{
+    color: #080808; /* color de texto */
+    font-size: 25px; /* tamaño letra */
+    margin: 0 14px;
+    text-decoration: none; /*sin subrayado */
+
+}
+header ul a:hover{
+    border-bottom: 2px solid #ffff; 
+
+}
+#hero{
+    
+    text-align: center;
+    margin-top: 200px;
+    
+}
+#hero h2{
+    text-shadow: 2px 2px 5px rgba(245, 9, 186, 0.3);
+    color: brown;
+    font-size: 50px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#hero h2:hover {
+    transform: rotate(5deg);
+}
+
+
+
+#hero h1{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 100px;
+
+}
+
+
+main{
+    width: 100%;
+    padding:  120px 0;
+    background-color: #F8EDE3;
+    text-align: center;
+}
+
+
+#nosotros h2{
+    font-size: 50px;
+    margin-top: -45px;
+    animation: blink 0.5s;
+}
+    
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#nosotros p{
+    font-size: 22px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#nosotros p:hover{
+    opacity: 0.7;
+}
+#nosotros .fila{
+/* para acomodar las imagenes */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#nosotros article{
+    margin: 0 40px;
+    position:  relative;
+}
+
+#galeria{
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #DFD3C3;
+      
+}
+
+#galeria h2{
+    margin-left: 40px;
+    margin-top: -300px;
+    font-size: 50px;
+    animation: blink 3s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#galeria h3{
+    position:  absolute;
+    z-index: 9;
+    top: 110px;
+    text-align: center;
+    color: #eaf647;
+    width: 100%;
+}
+
+#galeria {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 430px;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+#galeria img{
+    
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    
+  
+   
+}
+
+#galeria img:hover {
+    rotate: 360°;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#servicios h2 {
+    font-size: 50px;
+    margin-top: 5px;
+    color: black;
+}
+
+#servicios p{
+    font-size: 22px;
+}
+
+#servicios .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 50 px;
+}
+
+#servicios article{
+    margin: 0 40px;
+    position:  relative;
+    margin-bottom: 20px;
+}
+
+#servicios img:hover{
+    transform: scale(1.2);
+
+}
+
+#servicios h3 {
+    position: relative;
+    color: palevioletred;
+  }
+  
+#servicios h3::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+  }
+  
+#servicios h3:hover::after {
+    width: 100%; /* Subraya el texto al pasar el cursor */
+}
+
+#servicios{
+    background: #D0B8A8;
+    margin-bottom: 50px;
+}
+
+#testimonios{
+    background: url("../img/Frame\ 9.png");
+    background-size: cover;
+    background-position: center; 
+}
+#testimonios h2{
+    font-size: 50px;
+    margin-top: 30px;
+    color: black;
+}
+
+#testimonios p{
+    font-size: 22px;
+    margin-top: 45px;
+}
+
+#testimonios iframe{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
+}
+
+#contacto{
+    background: #C5705D;
+}
+#contacto h2{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+#contacto p{
+    margin-top: 55px;
+    font-size: 22px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#contacto p:hover{
+    opacity: 0.7;
+}
+
+
+
+
+#contacto h3{
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+#contacto h4{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+#contacto .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    gap: 90px;
+} 
+
+
+
+#contacto article{
+    margin-top: -500px;
+    margin: 40px;
+    position:  relative;
+}
+
+#contacto .text-container {
+    margin-top: 500px;
+    width: 100%; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 2px solid black; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+#contacto button{
+    background: #F8EDE3;
+
+}
+
+#contacto button:hover{
+    transform: scale(1.2);
+
+}
+
+
+footer{
+    background: #000000;
+    color: #ffff;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
